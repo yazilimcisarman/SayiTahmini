@@ -10,8 +10,9 @@ namespace SayiTahmini
             Console.WriteLine("3 hakkınız vardır !!!");
             Console.WriteLine("Sayı 0 ile 20 arasında bir sayı.");
             Console.WriteLine("Tahminini gir:");
+
             Random random = new Random();
-            int sayi = random.Next(0, 20);
+            int sayi = random.Next(0, 20); //sayıyı değiştirerek hangi sayılar arasında bulunmasını isterseniz onu yazın.
             bool success = true;
             int tahmin, say = 0;
             while (success && say <= 2)
@@ -26,11 +27,11 @@ namespace SayiTahmini
                 {
                     if (say == 2)
                     {
-                        Console.WriteLine("Sayıyı bulamadın, sayı: " + tahmin);
+                        Console.WriteLine("Sayıyı bulamadın, sayı: " + sayi);
                     }
                     else
                     {
-                        Console.WriteLine("Sayıyı bilemedin, tekrardan sayı gir");
+                        Console.WriteLine("Sayıyı bilemedin, tekrardan sayı gir:");
                     }
                     say++;
                 }
