@@ -21,7 +21,7 @@ namespace SayiTahmini
                 if (sayi == tahmin)
                 {
                     Console.WriteLine("Tebrikler!!!!!!! \nSayıyı bildin.");
-                    success = false;
+                    success = false;     
                 }
                 else
                 {
